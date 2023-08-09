@@ -1,8 +1,10 @@
 import styles from './Post.module.scss'
+import PostSelected from '../../features/PostSelected/PostSelected';
 
 const Post = () => {
+
     return (
-        <h1>Post</h1>
+        <section id="post"><PostSelected/></section>
     )
 }
 

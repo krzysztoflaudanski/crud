@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 import NavBar from './../NavBar/NavBar'
 
 const Header = () => {
-    return(
+    return (
         <section id='header'>
             <NavBar />
         </section>

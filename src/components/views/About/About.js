@@ -1,7 +1,7 @@
 import styles from './About.module.scss'
 
 const About = () => {
-    return(
+    return (
         <h1>About</h1>
     )
 }

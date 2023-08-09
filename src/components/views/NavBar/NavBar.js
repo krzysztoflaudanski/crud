@@ -8,14 +8,16 @@ const NavBar = () => {
     return (
         <Navbar bg="primary" variant="dark" expand="lg" className="mt-4 mb-4 rounded">
             <Container>
-                <Navbar.Brand href="/">Blog.app</Navbar.Brand>
-                <Nav>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"><span className="navbar-toggler-icon"></span></button>
-                    <div className="collapse navbar-collapse" id="mainMenu">
+                <Nav.Link as={NavLink} to="/">
+                    <Navbar.Brand>Blog.app</Navbar.Brand>
+                </Nav.Link>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
+                    <Nav className="justify-content-end" >
                         <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                         <Nav.Link as={NavLink} to="/about">About</Nav.Link>
-                    </div>
-                </Nav>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )

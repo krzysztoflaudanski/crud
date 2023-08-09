@@ -1,7 +1,7 @@
 import styles from './Post.module.scss'
 
 const Post = () => {
-    return(
+    return (
         <h1>Post</h1>
     )
 }

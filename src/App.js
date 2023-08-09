@@ -5,7 +5,7 @@ import AddPost from './components/pages/AddPost/AddPost';
 import EditPost from './components/pages/EditPost/EditPost';
 import About from './components/views/About/About';
 import NotFound from './components/views/NotFound/NotFound';
-import { Container,} from 'react-bootstrap'
+import { Container, } from 'react-bootstrap'
 import Header from './components/views/Header/Header';
 import Footer from './components/views/Footer/Footer'
 

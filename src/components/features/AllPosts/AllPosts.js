@@ -12,10 +12,10 @@ const AllPosts = () => {
 
   return (<article>
     <Row>{posts.map(post => (
-      <Col key={post.title}>
+      <Col key={post.id}>
         <Card className="mr-2 mb-3" style={{ minWidth: '18rem' }}>
           <Card.Body  >
-            <Card.Title>{post.id}</Card.Title>
+            <Card.Title>{post.title}</Card.Title>
             <Stack direction="horizontal" gap={1}>
               <Card.Subtitle>Author:
               </Card.Subtitle>

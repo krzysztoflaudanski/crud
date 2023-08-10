@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
 import AddPostForm from '../../features/AddPostForm/AddPostForm';
-import styles from './AddPost.module.scss'
 
 const AddPost = () => {
     return (<section id="addPost">

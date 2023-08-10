@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import AllPosts from '../../features/AllPosts/AllPosts';
-import styles from './Home.module.scss';
 import { Button, Stack } from 'react-bootstrap';
 
 

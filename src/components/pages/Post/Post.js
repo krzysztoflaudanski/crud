@@ -1,4 +1,3 @@
-import styles from './Post.module.scss'
 import PostSelected from '../../features/PostSelected/PostSelected';
 
 const Post = () => {

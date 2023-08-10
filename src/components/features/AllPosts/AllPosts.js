@@ -15,7 +15,7 @@ const AllPosts = () => {
       <Col key={post.title}>
         <Card className="mr-2 mb-3" style={{ minWidth: '18rem' }}>
           <Card.Body  >
-            <Card.Title>{post.title}</Card.Title>
+            <Card.Title>{post.id}</Card.Title>
             <Stack direction="horizontal" gap={1}>
               <Card.Subtitle>Author:
               </Card.Subtitle>
@@ -32,7 +32,8 @@ const AllPosts = () => {
             </Stack>
             <Card.Text>
               {post.shortDescription}
-            </Card.Text><NavLink to={"/post/" + post.id}>
+            </Card.Text>
+            <NavLink to={"/post/" + post.id}>
               <Button variant="primary">Read more</Button>
             </NavLink>
           </Card.Body>

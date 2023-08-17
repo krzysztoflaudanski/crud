@@ -7,6 +7,7 @@ import Stack from 'react-bootstrap/Stack';
 import { NavLink, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import { dateToStr } from '../../../utils/dateToStr';
 
 
 const PostSelected = () => {
@@ -45,11 +46,13 @@ const PostSelected = () => {
                 <Card.Subtitle>Published:
                 </Card.Subtitle>
                 <Card.Text>
-                    {postData.publishedDate}
+                    {dateToStr(postData.publishedDate)}
                 </Card.Text>
             </Stack>
             <Card.Text>
                 {postData.shortDescription}
+            </Card.Text>
+            <Card.Text dangerouslySetInnerHTML={{ __html: postData.content}}>
             </Card.Text>
         </Card.Body>
     </Card>

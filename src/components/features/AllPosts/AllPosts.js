@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { getAllPosts } from '../../../redux/postsRedux';
 import { NavLink } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
+import { dateToStr } from '../../../utils/dateToStr';
 
 const AllPosts = () => {
 
@@ -27,7 +28,7 @@ const AllPosts = () => {
               <Card.Subtitle>Published:
               </Card.Subtitle>
               <Card.Text>
-                {post.publishedDate}
+                {dateToStr(post.publishedDate)}
               </Card.Text>
             </Stack>
             <Card.Text>

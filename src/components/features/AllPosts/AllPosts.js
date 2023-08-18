@@ -18,17 +18,24 @@ const AllPosts = () => {
           <Card.Body  >
             <Card.Title>{post.title}</Card.Title>
             <Stack direction="horizontal" gap={1}>
-              <Card.Subtitle>Author:
+              <Card.Subtitle className='mt-0'>Author:
               </Card.Subtitle>
               <Card.Text>
                 {post.author}
               </Card.Text>
             </Stack>
             <Stack direction="horizontal" gap={1}>
-              <Card.Subtitle>Published:
+              <Card.Subtitle className='mt-0'>Published:
               </Card.Subtitle>
               <Card.Text>
                 {dateToStr(post.publishedDate)}
+              </Card.Text>
+            </Stack>
+            <Stack direction="horizontal" gap={1}>
+              <Card.Subtitle className='mt-0' >Category:
+              </Card.Subtitle>
+              <Card.Text>
+                {post.category}
               </Card.Text>
             </Stack>
             <Card.Text>

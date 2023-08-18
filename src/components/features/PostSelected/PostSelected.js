@@ -36,23 +36,30 @@ const PostSelected = () => {
                 <Button variant="outline-danger" onClick={handleShow}>Delete</Button>
             </Stack>
             <Stack direction="horizontal" gap={1}>
-                <Card.Subtitle>Author:
+                <Card.Subtitle className='my-auto'>Author:
                 </Card.Subtitle>
-                <Card.Text>
+                <Card.Text className='my-auto'>
                     {postData.author}
                 </Card.Text>
             </Stack>
             <Stack direction="horizontal" gap={1}>
-                <Card.Subtitle>Published:
+                <Card.Subtitle className='my-auto'>Published:
                 </Card.Subtitle>
-                <Card.Text>
+                <Card.Text className='my-auto' >
                     {dateToStr(postData.publishedDate)}
+                </Card.Text>
+            </Stack>
+            <Stack direction="horizontal" gap={1}>
+                <Card.Subtitle className='my-auto'>Category:
+                </Card.Subtitle>
+                <Card.Text className='my-auto'>
+                    {postData.category}
                 </Card.Text>
             </Stack>
             <Card.Text>
                 {postData.shortDescription}
             </Card.Text>
-            <Card.Text dangerouslySetInnerHTML={{ __html: postData.content}}>
+            <Card.Text dangerouslySetInnerHTML={{ __html: postData.content }}>
             </Card.Text>
         </Card.Body>
     </Card>

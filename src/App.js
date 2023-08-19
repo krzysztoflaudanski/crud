@@ -8,6 +8,8 @@ import NotFound from './components/views/NotFound/NotFound';
 import { Container } from 'react-bootstrap'
 import Header from './components/views/Header/Header';
 import Footer from './components/views/Footer/Footer'
+import AllCategories from './components/pages/AllCategories/AllCategories';
+import Category from './components/features/Category/Category';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="/post/add" element={<AddPost />} />
         <Route path="/post/edit/:postId" element={<EditPost />} />
         <Route path="/about" element={<About />} />
+        <Route path="/categories" element={<AllCategories/>} />
+        <Route path="/categories/:categoryName" element={<Category/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
